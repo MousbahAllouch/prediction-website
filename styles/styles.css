@@ -25,7 +25,7 @@ h1 {
 }
 
 h2 {
-    color: #fffdb6;
+    color: #8dbab4;
     padding-top: 20px;
 }
 
@@ -42,12 +42,12 @@ h2 {
     border: solid;
     border-radius: 20px;
     border-width: 0.1rem;
-    border-color: #6b9893;
+    border-color: #8dbab4;
     padding: 20px;
 }
 
 .btn {
-    background-color: #6b9893;
+    background-color: #8dbab4;
     height: 40px;
     width: 150px;
     border-radius: 20px;
@@ -55,7 +55,7 @@ h2 {
 }
 
 .user-input {
-    background-color: #6b9893;
+    background-color: #8dbab4;
     color: #fffdb6;
     font-size: 15px;
     width: 300px;
@@ -63,4 +63,10 @@ h2 {
     border-radius: 20px;
     opacity: 0.7;
     
+}
+
+.heading {
+    color: #8dbab4;
+    font-size: 20px;
+    padding-bottom: 20px;
 }
