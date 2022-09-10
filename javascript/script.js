@@ -30,7 +30,7 @@ function fetchingData(){
         .then((response) => response.json())
         .then((data) => {
              let gender=data.gender;
-             userGender.innerText=gender;
+             userGender.innerText="Your Gender: " + gender;
         });
 
     // getting age and set it
@@ -38,17 +38,17 @@ function fetchingData(){
         .then((response) => response.json())
         .then((data) => {
                 let age=data.age;
-                userAge.innerText=age;
+                userAge.innerText="Your Age: " + age;
         });
 
     // getting nationality and set it
     fetch(nationalityUrl)
         .then((response) => response.json())
         .then((data) => {
-            userNationality.innerText=data["country"][0]["country_id"];
+            userNationality.innerText="Your Nationality: " + data["country"][0]["country_id"];
             // to check if ther are more than one country
             if (data["country"]["length"]>1){
-                userNationality.innerText=data["country"][0]["country_id"]+" and "+data["country"][1]["country_id"];
+                userNationality.innerText="Your Nationality: " + data["country"][0]["country_id"]+" and "+data["country"][1]["country_id"];
             }
         });
 }

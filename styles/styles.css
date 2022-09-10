@@ -25,7 +25,8 @@ h1 {
 }
 
 h2 {
-    color: aliceblue;
+    color: #fffdb6;
+    padding-top: 20px;
 }
 
 .img-dog{
@@ -40,21 +41,26 @@ h2 {
     margin: 50px;
     border: solid;
     border-radius: 20px;
-    border-width: 1;
-    border-color: #3f706a;
+    border-width: 0.1rem;
+    border-color: #6b9893;
     padding: 20px;
 }
 
 .btn {
-    background-color: #f8d395;
-    height: 30px;
+    background-color: #6b9893;
+    height: 40px;
     width: 150px;
     border-radius: 20px;
+    opacity: 0.7;
 }
 
 .user-input {
-    width: 250px;
-    height: 30px;
+    background-color: #6b9893;
+    color: #fffdb6;
+    font-size: 15px;
+    width: 300px;
+    height: 40px;
     border-radius: 20px;
+    opacity: 0.7;
     
 }
