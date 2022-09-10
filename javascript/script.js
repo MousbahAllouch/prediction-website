@@ -46,14 +46,8 @@ function fetchingData(){
     fetch("https://dog.ceo/api/breeds/image/random")
         .then((response) => response.json())
         .then((data) => {
-            console.log(data.message)
+            // giv src attribute the image URL
             imgSrc.setAttribute("src",data.message);
     });
-
-
-    
-   
-
-
 }
 
