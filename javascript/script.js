@@ -1,4 +1,5 @@
 userGender=document.getElementById("user-gender");
+userAge=document.getElementById("user-age");
 
 
 // in this function we need to fetch all data we need when the user click the button
@@ -14,9 +15,19 @@ function fetchingData(){
     fetch(genderUrl)
         .then((response) => response.json())
         .then((data) => {
-             gender=data.gender
+             let gender=data.gender;
              userGender.innerText=gender;
         });
+
+    // getting age and set it
+    fetch(ageUrl)
+        .then((response) => response.json())
+        .then((data) => {
+                let age=data.age;
+                userAge.innerText=age;
+        });
+
+    
    
 
 
