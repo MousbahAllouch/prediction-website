@@ -11,16 +11,19 @@
     
     <div class="container">
         <div class="user-interface">
-            <input type="text" id="user-name">
-            <button onclick="fetchingData()">press_me</button>
+            <input type="text" placeholder="Enter Your Name" id="user-name" class="user-input">
+            <button onclick="fetchingData()" class="btn">press_me</button>
             <div>
                 <h2 id="user-gender"></h2>
                 <h2 id="user-age"></h2>
                 <h2 id="user-nationality"></h2>
             </div>
         </div>
-            
-        <div id="dog-img"><img src="" alt="Dog Image" id="img-src" class="img-dog"></div>
+        
+        <div id="dog-img">
+            <h1>Predicted dog image for you:</h1>
+            <img src="" alt="Dog Image" id="img-src" class="img-dog">
+        </div>
 
     </div>
     

@@ -5,6 +5,17 @@ imgSrc=document.getElementById("img-src")
 dogImg=document.getElementById("dog-img");
 
 
+
+
+// getting dog-image and set it
+fetch("https://dog.ceo/api/breeds/image/random")
+.then((response) => response.json())
+.then((data) => {
+    // giv src attribute the image URL
+    imgSrc.setAttribute("src",data.message);
+});
+
+
 // in this function we need to fetch all data we need when the user click the button
 function fetchingData(){
     let userName=document.getElementById("user-name").ariaValueMax;
@@ -40,14 +51,5 @@ function fetchingData(){
                 userNationality.innerText=data["country"][0]["country_id"]+" and "+data["country"][1]["country_id"];
             }
         });
-
-
-    // getting dog-image and set it
-    fetch("https://dog.ceo/api/breeds/image/random")
-        .then((response) => response.json())
-        .then((data) => {
-            // giv src attribute the image URL
-            imgSrc.setAttribute("src",data.message);
-    });
 }
 
